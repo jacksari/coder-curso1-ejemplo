@@ -379,3 +379,88 @@ footer .section-center .grid{
     }
   }
   
+  .box{
+      border: 1px solid #a82042;
+      padding: 2rem;
+      margin: 2rem 0;
+  }
+  .box .bola{
+      height: 100px;
+      width: 100px;
+      background: red;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 2s ease-in-out;
+
+  }
+  .box .bola:hover{
+      transform: translateX(50rem);
+  }
+  .box .bola1{
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    animation: bolamov 4s linear infinite;
+  } 
+  
+  @keyframes bolamov {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50rem);
+      }
+  
+    100% {
+        transform: translateX(0);
+    }
+  }
+  .box .cube{
+      height: 100px;
+      width: 100px;
+      background: red;
+      cursor: pointer;
+      transition: 1s ease-in-out;
+  }
+  .box .cube:hover{
+      transform: rotate(90deg) translateX(-20rem) translateY(-20rem);
+  }
+  .box .scale{
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    animation: scale 4s linear infinite;
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+
+      50% {
+        transform: scale(1);
+      }
+  
+    100% {
+        transform: scale(0);
+    }
+  }
+  .gradient{
+    background: linear-gradient(70deg, black, white);
+  }
+  .gradient h2{
+      color: white;
+  }
+  .gradient1{
+    background: linear-gradient(20deg, #a82042, #09f);
+  }
+  .gradient1 h2{
+    color: white;
+}
